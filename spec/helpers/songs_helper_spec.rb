@@ -1,6 +1,5 @@
 require 'rails_helper'
-
-# Specs in this file have access to a helper object that includes
+ # Specs in this file have access to a helper object that includes
 # the SongsHelper. For example:
 #
 # describe SongsHelper do
@@ -11,5 +10,13 @@ require 'rails_helper'
 #   end
 # end
 RSpec.describe SongsHelper, type: :helper do
-  pending "add some examples to (or delete) #{__FILE__}"
+  let(:attributes) do
+    {
+      title: "Dustwing",
+      genre: "tiny",
+      artist_name: "Abradacus nonexistus",
+      release_year: "1998",
+      released: "true"
+    }
+  end
 end
